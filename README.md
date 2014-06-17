@@ -29,3 +29,7 @@ Jekyll will automatically generate (during builds) thumbnails for any images in 
 Note
 ----
 Jekyll will output some HTML that is (intentionally) similar to what WordPress does for galleries in posts, making it relatively simple to tweak your CSS. It will also add `rel` attributes to the links, which contain the "galleryname" text as shown in the above example. This makes is easy to integrate a lightbox script like [FancyBox.](http://fancyapps.com/fancybox/)
+
+Example
+-------
+You can find an example [here](http://www.alorenzi.eu/2014/06/17/test-piwigo.html).
