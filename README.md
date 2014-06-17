@@ -1,7 +1,7 @@
 Piwigo Gallery
 ==============
 
-Jekyll plugin to generate thumbnails from a directory of images and display them with a Liquid tag from Piwigo site
+Jekyll plugin to generate thumbnails from a Piwigo gallery and display them with a Liquid tag 
 
 Installation
 --------------
