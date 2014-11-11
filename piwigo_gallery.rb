@@ -1,14 +1,14 @@
 # Jekyll  PiwigoGallery
-# 
+#
 # Import Gallery from piwigo
 #
 # Author: Alessandro "alorenzi" Lorenzi <alorenzi@alorenzi.eu>
 # Copyright: Copyright 2014 Alessandro Lorenzi
-# License: GPLv2 
+# License: GPLv2
 # Version: 1.0.0
 #
 require 'net/http'
-require 'json' 
+require 'json'
 module Jekyll
   class PiwigoGallery < Liquid::Tag
 
@@ -18,7 +18,7 @@ module Jekyll
     end
 
     def render(context)
-      @config = context.registers[:site].config['piwigogallery']
+      @config = context.registers[:site].config['piwigo_gallery']
       @json = get_json
       @images = get_images
       page = ""
@@ -26,7 +26,7 @@ module Jekyll
            page += render_image(image)
       end
       page
-      
+
     end
 
     def get_json
@@ -44,8 +44,8 @@ module Jekyll
     def render_image(image)
 	element = image['element_url']
         square = image['derivatives']['square']['url']
-	return "<a class='fancybox' rel='group' href='"+element+"'><img src='"+square+"' alt='' class='piwigo' /></a>" 
- 
+	return "<a class='fancybox' rel='group' href='"+element+"'><img src='"+square+"' alt='' class='piwigo' /></a>"
+
     end
   end
 end
